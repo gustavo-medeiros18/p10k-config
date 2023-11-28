@@ -198,7 +198,7 @@
 
   typeset -g POWERLEVEL9K_USER_FOREGROUND=51
   typeset -g POWERLEVEL9K_USER_BACKGROUND=232
-  typeset -g POWERLEVEL9K_USER_CONTENT_EXPANSION='gustavo '
+  typeset -g POWERLEVEL9K_USER_CONTENT_EXPANSION='[Your name here] '
 
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.
