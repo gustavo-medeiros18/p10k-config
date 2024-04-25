@@ -101,8 +101,8 @@
     load                  # CPU load
     disk_usage            # disk usage
     ram                   # free RAM
-    user
     battery
+    user
     # wifi
     # swap                  # used swap
     todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
@@ -198,7 +198,7 @@
 
   typeset -g POWERLEVEL9K_USER_FOREGROUND=51
   typeset -g POWERLEVEL9K_USER_BACKGROUND=232
-  typeset -g POWERLEVEL9K_USER_CONTENT_EXPANSION='[Your name here] '
+  typeset -g POWERLEVEL9K_USER_CONTENT_EXPANSION='gustavo '
 
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.
@@ -365,9 +365,9 @@
   #####################################[ vcs: git status ]######################################
   # Version control system colors.
   typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=2
-  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=214
-  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=214
-  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=214
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=3
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=3
+  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=3
   typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=8
 
   typeset -g POWERLEVEL9K_VCS_FOREGROUND=16
@@ -1628,16 +1628,16 @@
   ################################[ battery: internal battery ]#################################
   # Show battery in red when it's below this level and not connected to power supply.
   typeset -g POWERLEVEL9K_BATTERY_LOW_THRESHOLD=20
-  typeset -g POWERLEVEL9K_BATTERY_LOW_FOREGROUND=1
+  typeset -g POWERLEVEL9K_BATTERY_LOW_FOREGROUND=196
   # Show battery in green when it's charging or fully charged.
   typeset -g POWERLEVEL9K_BATTERY_{CHARGING,CHARGED}_FOREGROUND=2
   # Show battery in yellow when it's discharging.
-  typeset -g POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND=3
+  typeset -g POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND=51
   # Battery pictograms going from low to high level of charge.
   typeset -g POWERLEVEL9K_BATTERY_STAGES='\uf58d\uf579\uf57a\uf57b\uf57c\uf57d\uf57e\uf57f\uf580\uf581\uf578'
   # Don't show the remaining time to charge/discharge.
   typeset -g POWERLEVEL9K_BATTERY_VERBOSE=false
-  typeset -g POWERLEVEL9K_BATTERY_BACKGROUND=0
+  typeset -g POWERLEVEL9K_BATTERY_BACKGROUND=232
 
   #####################################[ wifi: wifi speed ]#####################################
   # WiFi color.
@@ -1752,6 +1752,3 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 
 (( ${#p10k_config_opts} )) && setopt ${p10k_config_opts[@]}
 'builtin' 'unset' 'p10k_config_opts'
-
-
-
